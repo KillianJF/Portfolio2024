@@ -1,0 +1,79 @@
+body {
+    color:white;
+}
+
+p {
+    font-weight:100;
+}
+
+section {
+    margin:5% 10%;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:0;
+}
+
+.photo-quisuisje {
+    width:40%;
+}
+
+.photo-quisuisje img {
+    width:100%;
+}
+
+.description {
+    width:50%;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+}
+
+.section3 div {
+    width:40%;
+    opacity: 0.5;
+}
+
+.section3 div p {
+    text-align: center;
+}
+
+
+@media (max-width:768px){
+    .section1 {
+        flex-direction: column;
+    }
+
+    .photo-quisuisje {
+        width:100%;
+    }
+    
+
+    .description {
+        width:100%;
+    }
+    
+    .logos{
+        width:80%;
+        flex-direction: column;
+    }
+    .logos img {
+        margin:15px 0 ;
+    }
+
+    .section3 div {
+        width:100%;
+    }
+}
