@@ -23,29 +23,29 @@
 }
 
 .video1 {
-    background: center no-repeat url(./Images/Gifs/hermesportfolio.gif);
+    background: center no-repeat url(./Images/Gifs/Hermes-compressed1.gif);
     background-size: cover;
 }
 
 .video2 {
-    background: center no-repeat url(./Images/Gifs/ClubMedPortfolio.gif);
+    background: center no-repeat url(./Images/Gifs/Clubmed-compressed1.gif);
     background-size: cover;
 }
 
 .video3 {
-    background: center no-repeat url(./Images/Gifs/couleurportfolio.gif);
+    background: center no-repeat url(./Images/Gifs/Couleur-compressed1.gif);
     background-size:cover;
 }
 .video4 {
-    background: center no-repeat url(./Images/Gifs/TrailPortfolio.gif);
+    background: center no-repeat url(./Images/Gifs/Trail-compressed1.gif);
     background-size:cover;
 }
 .video5 {
-    background: center no-repeat url(./Images/Gifs/amityportfolio.gif);
+    background: center no-repeat url(./Images/Gifs/amityportfolio-compressed.gif);
     background-size:cover;
 }
 .video6 {
-    background: center no-repeat url(./Images/Gifs/DJIPortfolio.gif);
+    background: center no-repeat url(./Images/Gifs/DJI-compressed1.gif);
     background-size:cover;
 }
 

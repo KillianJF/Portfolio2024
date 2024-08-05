@@ -29,6 +29,11 @@ section {
     width:50%;
 }
 
+.description > p {
+    font-family:Fustat-VariableFont;
+
+}
+
 
 .logos {
     display: flex;
