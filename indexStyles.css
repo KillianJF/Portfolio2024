@@ -5,7 +5,7 @@
 /* ============ Body ===============*/
 
 
-.row1, .row2{
+.row1, .row2, .row3{
     display: flex;
     justify-content: space-around;
     margin:5px 0;
@@ -48,7 +48,10 @@
     background: center no-repeat url(./Images/Gifs/DJI-compressed1.gif);
     background-size:cover;
 }
-
+.video7 {
+    background: center no-repeat url(./Images/Gifs/Coeogif.gif);
+    background-size:cover;
+}
 .container_details{
     width:100%;
     height:100%;
