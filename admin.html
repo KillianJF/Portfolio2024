@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Project (Admin)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <script>
+    // Password protection before DOMContentLoaded
+    (function() {
+      const password = 'bolobolo'; // Your password
+      let entered = false;
+      while (!entered) {
+        const input = prompt('Enter admin password:');
+        if (input === null) {
+          document.write('<div class="flex items-center justify-center min-h-screen"><p class="text-white text-xl">Access denied.</p></div>');
+          return;
+        }
+        if (input === password) {
+          entered = true;
+        } else {
+          alert('Incorrect password.');
+        }
+      }
+      // If correct, allow page to load
+    })();
+  </script>
+</head>
+<body class="bg-black min-h-screen flex items-center justify-center font-sans">
+  <div id="admin-content" class="w-full max-w-2xl bg-gray-900 rounded-lg shadow-lg p-8 mt-8 mb-8">
+    <h1 class="text-2xl font-bold text-white mb-6 text-center">Add a New Project</h1>
+    <iframe src="https://airtable.com/appWCwyEgGbsolg87/shr5Y95oL6SMzsQuH" class="w-full h-[700px] border-0 rounded-lg" allowfullscreen></iframe>
+    <p class="text-gray-400 text-xs mt-4 text-center">Only people with this link and password can add projects. Submissions go directly to your Airtable base.</p>
+  </div>
+</body>
+</html> 
