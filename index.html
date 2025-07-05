@@ -18,39 +18,70 @@
         margin: 0;
       }
     </style>
-    <!-- Balises Open Graph pour le partage sur les réseaux sociaux -->
+    <!-- Open Graph tags for social media sharing -->
     <meta property="og:title" content="Filmmaker • Tourism // Sport // Hôtel // Events">
-    <meta property="og:description" content="Découvrez le portfolio de Killian JF, réalisateur spécialisé dans le tourisme, le sport, l'hôtellerie et l'événementiel.">
-    <meta property="og:image" content="images/gifs/Sandy Bay.gif">
+    <meta property="og:description" content="Welcome to the portfolio of Killian JF, filmmaker specialized in tourism, sports, hospitality and events.">
+    <meta property="og:image" content="images/samasana.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://killianjf.com/">
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Filmmaker • Tourism // Sport // Hôtel // Events">
-    <meta name="twitter:description" content="Découvrez le portfolio de Killian JF, réalisateur spécialisé dans le tourisme, le sport, l'hôtellerie et l'événementiel.">
-    <meta name="twitter:image" content="images/gifs/Sandy Bay.gif">
+    <meta name="twitter:description" content="Welcome to the portfolio of Killian JF, filmmaker specialized in tourism, sports, hospitality and events.">
+    <meta name="twitter:image" content="images/samasana.png">
 </head>
 <body class="bg-black min-h-screen flex flex-col font-sans">
     <!-- Navigation -->
-    <nav class="bg-black text-white px-6 md:px-12 lg:px-24 py-[5rem]">
+    <nav class="bg-black text-white px-6 md:px-12 lg:px-24 py-8 md:py-[5rem]">
         <div class="max-w-7xl mx-auto flex justify-between items-center relative">
-            <!-- Left Menu -->
-            <div class="flex space-x-6 md:space-x-12">
+            <!-- Left Menu - Hidden on mobile -->
+            <div class="hidden md:flex space-x-6 md:space-x-12">
                 <a href="index.html" class="font-normal tracking-widest font-absans text-white no-underline">FILMS</a>
                 <a href="about.html" class="font-normal tracking-widest font-absans text-white opacity-50 hover:opacity-100 transition no-underline">WHO I AM</a>
             </div>
 
             <!-- Center Logo -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
-                <img src="images/Icons/Killian JF logo.png" alt="Killian JF" class="h-12 md:h-16">
-                <span class="text-white text-sm md:text-base tracking-widest mt-4 font-normal">Filmmaker • Tourism // Sport // Hôtel // Events</span>
+            <div class="flex flex-col items-center w-full md:w-auto md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+                <img src="images/Icons/Killian JF logo.png" alt="Killian JF" class="h-10 md:h-12 lg:h-16">
+                <span class="text-white text-xs md:text-sm lg:text-base tracking-widest mt-2 md:mt-4 font-normal text-center">Filmmaker • Tourism // Sport // Hôtel // Events</span>
             </div>
 
-            <!-- Right Menu -->
-            <div>
+            <!-- Burger Menu Button - Visible on mobile -->
+            <button id="burger-menu" class="md:hidden flex flex-col space-y-1 p-2" aria-label="Toggle menu">
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="w-6 h-0.5 bg-white transition-all duration-300"></span>
+            </button>
+
+            <!-- Right Menu - Hidden on mobile -->
+            <div class="hidden md:block">
                 <!-- <a href="#" class="text-white opacity-60 hover:opacity-100 transition" aria-label="Instagram">
                     <img src="images/Icons/mdi_instagram.png" alt="Instagram" class="w-6 h-6">
                 </a> -->
+            </div>
+        </div>
+
+        <!-- Close Button - Fixed position outside overlay -->
+        <button id="close-menu" class="md:hidden fixed top-8 right-8 text-white text-2xl z-50 opacity-0 pointer-events-none transition-opacity duration-300" aria-label="Close menu">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="md:hidden fixed inset-0 bg-black bg-opacity-95 z-40 transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="flex flex-col items-center justify-between h-full">
+                <!-- Mobile Menu Items - Centered -->
+                <div class="flex flex-col items-center space-y-8 mt-32">
+                    <a href="index.html" class="font-normal tracking-widest font-absans text-white text-2xl no-underline hover:opacity-75 transition">FILMS</a>
+                    <a href="about.html" class="font-normal tracking-widest font-absans text-white text-2xl opacity-75 hover:opacity-100 transition no-underline">WHO I AM</a>
+                </div>
+                
+                <!-- Mobile Logo - Bottom -->
+                <div class="flex flex-col items-center mb-8">
+                    <img src="images/Icons/Killian JF logo.png" alt="Killian JF" class="h-10 mb-2">
+                    <span class="text-white text-xs tracking-widest font-normal text-center">Filmmaker • Tourism // Sport // Hôtel // Events</span>
+                </div>
             </div>
         </div>
     </nav>
@@ -67,6 +98,7 @@
     <!-- Footer -->
     <footer class="bg-black text-white py-8 mt-8">
         <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">killian.jaffrelot@gmail.com</p>
             <p>&copy; 2025 Killian. All rights reserved.</p>
         </div>
     </footer>

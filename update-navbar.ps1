@@ -1,22 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAMASANA VILLAS - SUNSET DRONE</title>
-  <link href="https://fonts.cdnfonts.com/css/monesstry" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../css/style.css">
-  <style>
-    .monesstry-text {
-      font-family: 'Monesstry', sans-serif;
-      font-weight: 100;
-      font-size: 100px;
-      margin: 0;
-    }
-  </style>
-</head>
-<body class="bg-black min-h-screen flex flex-col font-sans">
+# PowerShell script to update all project pages with responsive navbar
+
+$projectFiles = @(
+    "projects/clubmed-seminaire-djerba-2024.html",
+    "projects/coeo-design-kamado-4.html",
+    "projects/couleur-rugby-world-cup-au-coeur-des-supporters.html",
+    "projects/dji-alex-jackson-video-youtube-sponsorisee-dji-mini-3.html",
+    "projects/food-drinks-photoshoot.html",
+    "projects/hermes-concours-visual-merchandiser.html",
+    "projects/photoset-siargao.html",
+    "projects/shorts-social-media-edit.html",
+    "projects/trail-adventure-motos-dans-les-bardenas.html",
+    "projects/amity-teaser-drop-tee-shirt.html"
+)
+
+$oldNavbar = @'
+  <!-- Navigation -->
+  <nav class="bg-black text-white px-6 md:px-12 lg:px-24 py-[5rem]">
+    <div class="max-w-7xl mx-auto flex justify-between items-center relative">
+      <!-- Left Menu -->
+      <div class="flex space-x-6 md:space-x-12">
+        <a href="../index.html" class="font-normal tracking-widest font-absans text-white no-underline">FILMS</a>
+        <a href="../about.html" class="font-normal tracking-widest font-absans text-white opacity-50 hover:opacity-100 transition no-underline">WHO I AM</a>
+      </div>
+      <!-- Center Logo -->
+      <div class="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+        <img src="../images/Icons/Killian JF logo.png" alt="Killian JF" class="h-12 md:h-16">
+        <span class="text-white text-xs md:text-sm tracking-widest mt-4">Filmmaker • Tourism // Sport // Hôtel // Events</span>
+      </div>
+      <!-- Right Menu -->
+      <div>
+        <!-- <a href="#" class="text-white opacity-60 hover:opacity-100 transition" aria-label="Instagram">
+          <img src="../images/Icons/mdi_instagram.png" alt="Instagram" class="w-6 h-6">
+        </a> -->
+      </div>
+    </div>
+  </nav>
+'@
+
+$newNavbar = @'
   <!-- Navigation -->
   <nav class="bg-black text-white px-6 md:px-12 lg:px-24 py-8 md:py-[5rem]">
     <div class="max-w-7xl mx-auto flex justify-between items-center relative">
@@ -71,24 +92,23 @@
       </div>
     </div>
   </nav>
+'@
 
-  <!-- Project Content -->
-  <main class="flex-1 flex items-center justify-center p-4">
-    <div class="max-w-5xl w-full mx-auto flex flex-col md:flex-row bg-zinc-900 rounded-lg shadow-2xl overflow-hidden border border-zinc-800">
-      <div class="md:w-1/2 w-full aspect-video bg-black flex items-center justify-center">
-        <iframe class="w-full h-64 md:h-96 rounded-l-lg" src="https://www.youtube.com/embed/RjnwDMDxNds" title="SAMASANA VILLAS - SUNSET DRONE" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <div class="md:w-1/2 w-full p-8 flex flex-col justify-center bg-zinc-950">
-        <h1 class="text-3xl font-bold mb-6 text-white">SAMASANA VILLAS - SUNSET DRONE</h1>
-        <p class="text-lg text-zinc-200">A short drone video showcasing Villa Samasana in Uluwatu</p>
-      </div>
-    </div>
-  </main>
-
+$oldFooter = @'
   <!-- Footer -->
   <footer class="bg-black text-white py-8 mt-8">
     <div class="container mx-auto px-4 text-center">
-      <p class="mb-2">killian.jaffrelot@gmail.com</p>
+      <p>&copy; 2025 Killian JF. Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
+'@
+
+$newFooter = @'
+  <!-- Footer -->
+  <footer class="bg-black text-white py-8 mt-8">
+    <div class="container mx-auto px-4 text-center">
       <p>&copy; 2025 Killian JF. Tous droits réservés.</p>
     </div>
   </footer>
@@ -96,4 +116,20 @@
   <!-- Custom JavaScript -->
   <script src="../js/main.js"></script>
 </body>
-</html> 
+</html>
+'@
+
+foreach ($file in $projectFiles) {
+    if (Test-Path $file) {
+        Write-Host "Updating $file..."
+        $content = Get-Content $file -Raw
+        $content = $content -replace [regex]::Escape($oldNavbar), $newNavbar
+        $content = $content -replace [regex]::Escape($oldFooter), $newFooter
+        Set-Content $file $content -Encoding UTF8
+        Write-Host "Updated $file successfully!"
+    } else {
+        Write-Host "File $file not found!"
+    }
+}
+
+Write-Host "All project pages updated with responsive navbar!" 

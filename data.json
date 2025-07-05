@@ -4,7 +4,7 @@
       "fields": {
         "title": "SANDY BAY - BEACH RESORT",
         "type": "Promotional video",
-        "description": "A documentary about Sandy Bay",
+        "description": "A short drone video showcasing Sandy Bay Villa in Nusa Lembongan.",
         "ytb-url": "https://youtu.be/FPe4zxknWC4",
         "gif": [{ "url": "images/gifs/Sandy Bay.gif" }]
       }
@@ -13,7 +13,7 @@
       "fields": {
         "title": "SAMASANA VILLAS - SUNSET DRONE",
         "type": "Promotional video",
-        "description": "A commercial project for Samasana",
+        "description": "A short drone video showcasing Villa Samasana in Uluwatu",
         "ytb-url": "https://youtu.be/RjnwDMDxNds",
         "gif": [{ "url": "images/gifs/Samasana.gif" }]
       }
@@ -22,7 +22,7 @@
       "fields": {
         "title": "SHORTS - SOCIAL MEDIA EDIT",
         "type": "Social media",
-        "description": "A creative short film project",
+        "description": "A few short-form videos showcasing Samasana Villa in Uluwatu",
         "ytb-url": "https://youtu.be/KQBU9KCENhQ",
         "gif": [{ "url": "images/gifs/Shorts.gif" }]
       }
@@ -31,7 +31,7 @@
       "fields": {
         "title": "FOOD & DRINKS - PHOTOSHOOT",
         "type": "Photo set",
-        "description": "A collection of stunning photographs",
+        "description": "A collection of photographs done for Golden Bell Cafe in Siargao, Philippines",
         "ytb-url": "",
         "gif": [{ "url": "images/gifs/Photoset.gif" }]
       }
@@ -40,7 +40,7 @@
       "fields": {
         "title": "CLUBMED - SEMINAIRE DJERBA 2024",
         "type": "Event video",
-        "description": "A commercial project for Club Med",
+        "description": "An event video for Club Med",
         "ytb-url": "https://youtu.be/Ekwsm9XKl20",
         "gif": [{ "url": "images/gifs/Clubmed-compressed1.gif" }]
       }
@@ -49,7 +49,7 @@
       "fields": {
         "title": "COEO DESIGN - KAMADO 4",
         "type": "Event video",
-        "description": "A commercial project for Coeo",
+        "description": "A commercial project for Coeo, promoting the Kamado 4 BBQ",
         "ytb-url": "https://youtu.be/FcD_OgreFy0?si=u8XR6Ye7MwZdpvLm",
         "gif": [{ "url": "images/gifs/Coeogif.gif" }]
       }
@@ -58,7 +58,7 @@
       "fields": {
         "title": "HERMES - CONCOURS VISUAL MERCHANDISER",
         "type": "Promotional video",
-        "description": "A commercial project for Hermes",
+        "description": "A commercial project for Hermes, showcasing the visual merchandiser profession",
         "ytb-url": "https://youtu.be/blvn1Ca3AIg",
         "gif": [{ "url": "images/gifs/Hermes-compressed1.gif" }]
       }
@@ -67,7 +67,7 @@
       "fields": {
         "title": "TRAIL ADVENTURE - MOTOS DANS LES BARDENAS",
         "type": "Promotional video",
-        "description": "A documentary about trails",
+        "description": "A promotional video for Trail Adventure, showcasing the beauty of the Bardenas Reales in Navarra, Spain",
         "ytb-url": "https://youtu.be/q41yQYEV934",
         "gif": [{ "url": "images/gifs/Trail-compressed1.gif" }]
       }
@@ -76,7 +76,7 @@
       "fields": {
         "title": "AMITY - TEASER DROP TEE-SHIRT",
         "type": "Promotional video",
-        "description": "A commercial project for Amity",
+        "description": "A commercial project for Amity, a streetwear brand",
         "ytb-url": "https://youtu.be/aJc88eopBAM",
         "gif": [{ "url": "images/gifs/amityportfolio-compressed.gif" }]
       }
@@ -85,7 +85,7 @@
       "fields": {
         "title": "DJI/ALEX JACKSON - VIDEO YOUTUBE SPONSORISEE DJI MINI 3",
         "type": "Promotional video",
-        "description": "A commercial project for DJI",
+        "description": "A commercial project for DJI, in collaboration with Alex Jackson",
         "ytb-url": "https://youtu.be/63_AQ4m4Ve0?si=99WNmSxror56XoN5",
         "gif": [{ "url": "images/gifs/DJI-compressed1.gif" }]
       }
@@ -94,7 +94,7 @@
       "fields": {
         "title": "COULEUR - RUGBY WORLD CUP - \"AU CŒUR DES SUPPORTERS\"",
         "type": "Event video",
-        "description": "An artistic exploration of colors",
+        "description": "Here is one of the videos made for Couleur Rugby, during the Rugby World Cup 2023",
         "ytb-url": "https://youtube.com/watch?v=example9",
         "gif": [{ "url": "images/gifs/Couleur-compressed1.gif" }]
       }
