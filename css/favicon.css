@@ -1,0 +1,12 @@
+/* Favicon round styling */
+link[rel="icon"] {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+/* Alternative approach for some browsers */
+.favicon-round {
+  border-radius: 50% !important;
+  clip-path: circle(50% at 50% 50%);
+} 

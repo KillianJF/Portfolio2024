@@ -1,0 +1,16 @@
+{
+  "name": "Killian JF - Filmmaker & Photographer",
+  "short_name": "Killian JF",
+  "description": "Professional filmmaker and photographer specializing in tourism, sports, hospitality and events",
+  "icons": [
+    {
+      "src": "images/Icons/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": "/"
+} 

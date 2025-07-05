@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://killianjf.com/sitemap.xml
+
+# Disallow admin pages
+Disallow: /admin.html
+Disallow: /netlify/ 
